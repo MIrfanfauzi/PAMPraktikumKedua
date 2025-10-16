@@ -25,3 +25,8 @@ fun TataletakRow(modifier: modifier) {
         Text(text = "Komponen4")
     }
 }
+
+@Composable
+fun TataletakBox(modifier: modifier) {
+
+}
