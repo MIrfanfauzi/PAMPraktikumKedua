@@ -1,12 +1,31 @@
 package com.example.pampraktikumpertama
 
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+
+
+
 
 @Composable
 fun TataletakColumn(modifier: Modifier) {
@@ -20,7 +39,7 @@ fun TataletakColumn(modifier: Modifier) {
 }
 
 @Composable
-fun TataletakRow(modifier: modifier) {
+fun TataletakRow(modifier: Modifier) {
     Row(modifier = modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceEvenly) {
         Text(text = "Komponen1")
@@ -31,7 +50,7 @@ fun TataletakRow(modifier: modifier) {
 }
 
 @Composable
-fun TataletakBox(modifier: modifier) {
+fun TataletakBox(modifier: Modifier) {
     Box(
         modifier = modifier
             .fillMaxHeight()
@@ -46,7 +65,7 @@ fun TataletakBox(modifier: modifier) {
 }
 
 @Composable
-fun TataletakColumnRow(modifier: modifier) {
+fun TataletakColumnRow(modifier: Modifier) {
     Column() {
         Row(modifier = modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly) {
@@ -65,6 +84,7 @@ fun TataletakColumnRow(modifier: modifier) {
         }
     }
 }
+
 
 @Composable
 fun TataletakRowColumn(modifier: Modifier) {
@@ -92,7 +112,7 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
             modifier = modifier
                 .fillMaxWidth()
                 .height(height = 110.dp)
-                .background(color = Color.Yellow),
+                .background(color = Color.Red),
             contentAlignment = Alignment.Center
         ) {
             Column() {
@@ -120,19 +140,19 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
             modifier = modifier
                 .fillMaxWidth()
                 .height(height = 300.dp)
-                .background(color = color.Cyan),
+                .background(color = Color.Yellow),
             contentAlignment = Alignment.Center
         ){
             Image(painter = gambar,
                 contentDescription = null,
                 contentScale = ContentScale.Fit)
+            val alignment = null
             Text(text = "My Musix",
                 fontSize = 50.sp,
                 color = Color.Red,
-                fontWeight =FontWeight.Bold,
+                fontWeight = FontWeight.Bold,
                 fontFamily = FontFamily.Cursive,
-                modifier = modifier.align(
-                    alignment = alignment.Center))
+                modifier = modifier.align(alignment= Alignment.Center))
         }
     }
 
