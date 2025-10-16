@@ -79,10 +79,12 @@ fun TataletakRowColumn(modifier: Modifier) {
             Text(text = "Komponen3Kolom2")
         }
     }
+}
 
 
-
-
+@Composable
+fun TataletakBoxColumnRow(modifier: Modifier) {
+    val gambar = painterResource(id = R.drawable.samsung)
 
 
 }
