@@ -1,6 +1,7 @@
 package com.example.pampraktikumpertama
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -44,7 +45,14 @@ fun TataletakBox(modifier: modifier) {
 
 @Composable
 fun TataletakColumnRow(modifier: modifier) {
-
+    Column() {
+        Row(modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly) {
+            Text(text = "Komponen1Baris1")
+            Text(text = "Komponen2Baris1")
+            Text(text = "Komponen3Baris1")
+        }
+    }
 }
 
 
