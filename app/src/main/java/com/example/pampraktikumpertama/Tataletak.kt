@@ -113,9 +113,26 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                     Text(text = "Coll_Row2_Komponen2")
                     Text(text = "Coll_Row2_Komponen3")
                 }
-
-                )
             }
+        }
+        Spacer(modifier = modifier.height(height = 10.dp))
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(height = 300.dp)
+                .background(color = color.Cyan),
+            contentAlignment = Alignment.Center
+        ){
+            Image(painter = gambar,
+                contentDescription = null,
+                contentScale = ContentScale.Fit)
+            Text(text = "My Musix",
+                fontSize = 50.sp,
+                color = Color.Red,
+                fontWeight =FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = modifier.align(
+                    alignment = alignment.Center))
         }
     }
 
