@@ -13,3 +13,8 @@ fun TataletakColumn(modifier: Modifier) {
     }
 
 }
+
+@Composable
+fun TataletakRow(modifier: modifier) {
+
+}
