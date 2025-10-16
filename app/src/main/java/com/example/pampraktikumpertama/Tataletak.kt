@@ -2,6 +2,8 @@ package com.example.pampraktikumpertama
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -85,7 +87,26 @@ fun TataletakRowColumn(modifier: Modifier) {
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier) {
     val gambar = painterResource(id = R.drawable.samsung)
-
+    Column {
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(height = 110.dp)
+                .background(color = Color.Yellow),
+            contentAlignment = Alignment.Center
+        ) {
+            Column() {
+                Row(
+                    modifier =modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Coll_Row1_Komponen1")
+                    Text(text = "Coll_Row1_Komponen2")
+                    Text(text = "Coll_Row1_Komponen3")
+                }
+            }
+        }
+    }
 
 }
 
