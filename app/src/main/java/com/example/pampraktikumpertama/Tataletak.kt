@@ -42,6 +42,10 @@ fun TataletakBox(modifier: modifier) {
     }
 }
 
+@Composable
+fun TataletakColumnRow(modifier: modifier) {
+
+}
 
 
 
